@@ -1,0 +1,24 @@
+import pyautogui,webbrowser  #el pyautogui sirve como teclado ejemplo con "enter" y webbroser si para abril el navegador se te abrera el navegador de edge
+from time import sleep # este es para que espere un tiempo
+  
+
+webbrowser.open("https://web.whatsapp.com/send?phone=(Numero de Contactos ejemplo:+502 6984-3432)")#se puede en otro aplicacion con el link pero necesita que el picacion indetifique el chat o contacto que quiere enviar
+
+
+sleep(15)#es por segundo 15
+
+
+for i in range(1):#cuando vece quiere enviar
+    pyautogui.typewrite("EL MESANJE QUE QUIERES ENVIAR")#el mensaje quequiere enviar
+    pyautogui.press("Enter")
+
+using System;#apagar
+using System.Diagnostics;
+
+class Program
+{
+    static void Main()
+    {
+        Process.Start("shutdown", "/s /t 10");#apgar el 10 segundo
+    }
+}
