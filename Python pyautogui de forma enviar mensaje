@@ -1,0 +1,19 @@
+import pyautogui
+import webbrowser
+from time import sleep
+import os # <-- Añadimos esto para poder apagar la PC desde Python
+
+# Abre el navegador en WhatsApp Web
+# NOTA: Asegúrate de que el enlace tenga un número real sin texto adentro para que funcione
+webbrowser.open("https://web.whatsapp.com/send?phone=+50269843432")
+
+# Espera 15 segundos a que cargue la página
+sleep(15)
+
+# Envía el mensaje
+for i in range(1):
+    pyautogui.typewrite("EL MENSAJE QUE QUIERES ENVIAR")
+    pyautogui.press("Enter")
+
+# Apagar la PC en 10 segundos usando Python
+os.system("shutdown /s /t 10")
